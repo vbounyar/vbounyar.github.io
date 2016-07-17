@@ -1,0 +1,17 @@
+{
+  "name": "AngularLesson1",
+  "authors": [
+    "Vanida Bounyarith <vbounyar@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "angular": "angularjs#~1.4.9"
+  }
+}

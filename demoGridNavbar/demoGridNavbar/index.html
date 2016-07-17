@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Navbar</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Grid Navbar</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#link1">Link 1</a></li>
+          <li><a href="#link2">Link 2</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Grid Navbar Example</h1>
+    <p>Should expand to equal widths on any screen</p>
+  </div> <!-- /container -->
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+
+
+<script>
+var gridifyNavbar = function (){
+  //  Must get the window. Information would be constantly changing with shifting of window size.
+  var $window = $(window);
+
+
+  $window.resize(function(){
+    //  Check to see if the toggle menu is on.
+    var $toggleBtn = $("button.navbar-toggle");
+    var isVisible = $toggleBtn.is(":visible");
+
+    //  Get the window height and width
+    var height = window.innerHeight;
+    var width = window.innerWidth;
+
+    //  Find the number of menu items
+    var menuItems = $("ul.nav.navbar-nav li").length;
+    console.log("Number of items: " + menuItems);
+
+
+    if(isVisible){
+      // console.log("Is Visible" + "H: " + height + " W: " + width);
+      $("navbar-nav").css("display", "none");
+    } else {
+      console.log("Not Visible");
+    }
+  });
+
+};
+
+$(document).ready(gridifyNavbar);
+
+</script>
+
+</body>
+</html>

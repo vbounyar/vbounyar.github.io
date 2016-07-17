@@ -1,0 +1,158 @@
+/*  Custom Styles */
+.hidden {display:none;}
+
+
+body {
+  padding-top: 45px;
+  font-family: 'Droid Sans', sans-serif;
+  height: 100%;
+
+}
+
+/* For name at menu */
+
+.name-brand {
+  font-size: 200%;
+  font-family: 'Pacifico', Helvetica, Arial, cursive, sans-serif;
+}
+
+/* customize the links here */
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #178235;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #178235;
+}
+
+.icon-bar {
+  background-color: #FFF !important;
+}
+
+/*
+.jumbotron {
+  background-color: #5cb85c;
+}*/
+
+.anchor{
+  display: block;
+  height: 76px; /*same height as header*/
+  margin-top: -76px; /*same height as header*/
+  visibility: hidden;
+}
+
+/* About me section */
+.container-about {
+  margin-bottom: 55px;
+}
+
+.social-media {
+  list-style:none;
+  margin:auto;
+  width:200px;
+}
+
+.social-media li {
+  float: left;
+  margin-right: 10px;
+}
+
+.about img {
+  width:auto;
+  height:200px;
+  margin-bottom:10px;
+}
+.about-text {
+  text-align:justify;
+}
+
+.about-text h1, .contact h1, .portfolio h1 {margin-top:0;}
+
+.jumbotron {
+  padding:15px;
+  text-align: center;
+}
+
+.contact {
+  height:500px;
+}
+
+#portfolio, #contact {
+  margin-top:25px;
+}
+
+.portfolio-heading {
+  color: white;
+  font-weight: bold;
+  background-color: #1c9e41;
+}
+
+
+.portfolio :not(h1){
+  text-align:center;
+}
+
+.left-indent {
+  text-align: left !important;
+  margin-left: 15px;
+}
+
+.portfolio button {
+  width: 150px;
+  margin: auto;
+}
+
+.portfolio p {
+  text-align: justify;
+}
+
+.well img {
+  width: 200px;
+  height: auto;
+}
+
+.modal-header {
+  color: #ffffff;
+  background-color: #178235;
+}
+
+footer {
+	width: 100%;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #000;
+  color:white;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+  text-align:center;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}

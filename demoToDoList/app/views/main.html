@@ -1,0 +1,28 @@
+<h1>To Do List</h1>
+
+<div ng-controller="MainCtrl">
+
+  <!-- Display Tasks To Do -->
+  <table class="table">
+    <tr>
+      <th></th>
+      <th><h2>Task</h2></th>
+    </tr>
+
+    <!-- iterate through records using ng-repeat -->
+    <tr ng-repeat="task in tasks">
+      <td><a ng-click="deleteTask($index)" class="delete-task"><i class="fa fa-times fa-lg pull-right"></i></a></td>
+      <td>{{task.task}}</td>
+    </tr>
+  </table>
+
+  <form name="frm">
+    <div class="form-group">
+      <label for="task"></label>
+      <input class="form-control fullwidth" id="task" name="task" ng-model="task" placeholder="task">
+    </div>
+  </form>
+
+  <button class="btn btn-primary fullwidth" style="width:100%" ng-click="addTask()">Add</button>
+
+</div>
